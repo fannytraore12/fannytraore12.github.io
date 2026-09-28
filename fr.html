@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio en génie des systèmes informatiques à l'Université Carleton">
-    <title>Fanny Traore | Portfolio en génie des systèmes informatiques à l'Université Carleton</title>
+    <meta name="description" content="Portfolio de Fanny Traore, étudiante en génie des systèmes informatiques à l'Université Carleton.">
+    <title>Fanny Traore | Portfolio en génie des systèmes informatiques</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Aller au contenu</a>
+
     <header>
         <nav class="navbar navbar-expand-md" aria-label="Navigation principale">
             <div class="container">
@@ -35,6 +36,7 @@
             </div>
         </nav>
     </header>
+
     <main id="main" class="container py-5">
         <h1>Fanny Traore</h1>
         <p class="lead">Étudiante en génie des systèmes informatiques à l'Université Carleton</p>
@@ -42,15 +44,86 @@
         <section id="about" class="py-5">
             <h2>À propos</h2>
             <p>Étudiante en génie des systèmes informatiques à l'Université Carleton. Je travaille sur toute la chaîne, des interfaces utilisateur en HTML, CSS et JavaScript jusqu'au micrologiciel en C++ et au Verilog sur FPGA, et j'accorde autant d'importance aux tests et au débogage qu'à la conception. Bilingue (anglais/français) et à la recherche d'un stage coop pour l'hiver 2027, peu importe la durée.</p>
-            <div class=""d-flex gap-2 mt-3>
+            <div class="d-flex gap-2 mt-3">
+                <a href="Fanny_Traore_Resume_General.pdf" class="btn btn-outline-primary">CV (PDF, en anglais)</a>
                 <a href="https://github.com/fannytraore12" class="btn btn-outline-primary">GitHub</a>
                 <a href="https://linkedin.com/in/fanny-traore" class="btn btn-outline-primary">LinkedIn</a>
-                <a href="Fanny_Traore_Resume_General.pfd" class="btn btn-outline-primary">CV (PDF)</a>
             </div>
         </section>
 
         <section id="projects" class="py-5">
             <h2>Projets</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <div id="mochadoroCarousel" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/mochadoro_1.png" class="d-block w-100" alt="Écran de minuterie de Mochadoro avec les commandes de session">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/mochadoro_2.png" class="d-block w-100" alt="Carte Arduino avec DEL RVB et afficheur à 7 segments câblés pour Mochadoro">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#mochadoroCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Image précédente</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#mochadoroCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Image suivante</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Mochadoro</h3>
+                            <p class="card-text">Une application de productivité pour ordinateur, synchronisée avec du matériel Arduino par UART en moins de 50 ms. J'ai conçu et programmé toute l'interface et écrit le micrologiciel en C++.</p>
+                            <p>
+                                <span class="badge text-bg-light">HTML/CSS/JS</span>
+                                <span class="badge text-bg-light">Electron</span>
+                                <span class="badge text-bg-light">C++</span>
+                            </p>
+                            <a href="https://github.com/fannytraore12/mochadoro" class="card-link">Mochadoro sur GitHub</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="images/scamfree.png" class="card-img-top"
+                             alt="Alerte d'hameçonnage de ScamFree affichée dans une boîte de réception Gmail">
+                        <div class="card-body">
+                            <h3 class="card-title h5">ScamFree</h3>
+                            <p class="card-text">Une extension Chrome qui signale les courriels d'hameçonnage suspects directement dans Gmail. Réalisée en équipe lors d'un hackathon : j'ai conçu l'extension et les tests automatisés (pytest et Jest, avec un seuil de précision de 95 %) qui s'exécutent dans GitHub Actions à chaque modification.</p>
+                            <p>
+                                <span class="badge text-bg-light">JavaScript</span>
+                                <span class="badge text-bg-light">Extension Chrome</span>
+                                <span class="badge text-bg-light">Python</span>
+                                <span class="badge text-bg-light">pytest / Jest</span>
+                                <span class="badge text-bg-light">GitHub Actions</span>
+                            </p>
+                            <a href="https://github.com/fannytraore12/ScamFree" class="card-link">ScamFree sur GitHub</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <!-- Add the board photo here once images/morsecode.png exists:
+                        <img src="images/morsecode.png" class="card-img-top"
+                             alt="Carte FPGA PYNQ-Z2 avec des DEL allumées pendant le décodage d'un signal Morse"> -->
+                        <div class="card-body">
+                            <h3 class="card-title h5">Décodeur de code Morse</h3>
+                            <p class="card-text">Un décodeur de code Morse conçu en Verilog sur une carte FPGA PYNQ-Z2. Il utilise un synchroniseur et une machine à états à quatre états pour lire les pressions de bouton de façon fiable malgré les variations de synchronisation. Quand la machine à états fonctionnait mal pendant les tests, j'ai trouvé le problème en affichant ses états sur les DEL de la carte, puis je l'ai corrigé avec un conditionnement des impulsions. <em>(En cours)</em></p>
+                            <p>
+                                <span class="badge text-bg-light">Verilog</span>
+                                <span class="badge text-bg-light">Vivado</span>
+                                <span class="badge text-bg-light">FPGA (PYNQ-Z2)</span>
+                            </p>
+                            <a href="https://github.com/fannytraore12/MorseCode_decoder" class="card-link">Décodeur de code Morse sur GitHub</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
         </section>
 
         <section id="skills" class="py-5">
