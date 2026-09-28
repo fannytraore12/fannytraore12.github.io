@@ -1,0 +1,36 @@
+:root{
+    --pink-accents:  #a83a66;
+    --pink-dark: #6b1d3d;
+    --pink-soft: #FCE4EC;
+    --text: #2c1622;  
+}
+
+h1, h2, h3, .navbar-brand{
+    font-family: "Judson", serif;
+    color: var(--pink-accents);
+}
+
+.navbar{
+    background-color: var(--pink-soft);
+}
+.navbar, .nav-link{
+    color: var(--pink-accents);
+}
+.vavbar, nav-link:hover{
+    color:var(--pink-dark);
+}
+a{
+    color:var(--pink-accents);
+}
+a:hover{
+    color:var(--pink-dark);
+}
+
+a:focus-visible{
+    outline: 3px solid var(--pink-dark);
+    outline-offset: 2px;
+}
+
+body{
+    color: var(--text);
+}
