@@ -34,3 +34,13 @@ a:focus-visible{
 body{
     color: var(--text);
 }
+
+.btn-outline-primary{
+    --bs-btn-color: var(--pink-accents);
+    --bs-btn-border: var(--pink-accents);
+    --bs-btn-hover-color: var(#fff);
+    --bs-btn-hover-bg: var(--pink-dark);
+    --bs-btn-border-color: var(--pink-dark);
+    --bs-btn-focus-shadow-rgb: 168, 58, 102;
+}
+
