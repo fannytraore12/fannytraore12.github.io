@@ -43,16 +43,72 @@
 
         <section id="about" class="py-5">
             <h2>About</h2>
-            <p>Computer Systems Engineering student at Carleton University. I build across the stack, from user interfaces in HTML, CSS and JavaScript to C++ firmware and Verilog on FPGAs, and I care about testing and debugging as much as building. Bilingual (English/French) and looking for a Winter 2027 co-op, open to any term length</p>
-            <div class=""d-flex gap-2 mt-3>
+            <p>Computer Systems Engineering student at Carleton University. I build across the stack, from user interfaces in HTML, CSS and JavaScript to C++ firmware and Verilog on FPGAs, and I care about testing and debugging as much as building. Bilingual (English/French) and looking for a Winter 2027 co-op, open to any term length.</p>
+            <div class="d-flex gap-2 mt-3">
+                <a href="Fanny_Traore_Resume_General.pdf" class="btn btn-outline-primary">Resume (PDF)</a>
                 <a href="https://github.com/fannytraore12" class="btn btn-outline-primary">GitHub</a>
                 <a href="https://linkedin.com/in/fanny-traore" class="btn btn-outline-primary">LinkedIn</a>
-                <a href="Fanny_Traore_Resume_General.pfd" class="btn btn-outline-primary">Resume (PDF)</a>
             </div>
         </section>
 
         <section id="projects" class="py-5">
             <h2>Projects</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="images/mochadoro.png" class="card-img-top"
+                             alt="Mochadoro timer screen showing session controls">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Mochadoro</h3>
+                            <p class="card-text">A desktop productivity app synced with Arduino hardware over UART in under 50 ms. I designed and coded the whole interface and wrote the C++ firmware.</p>
+                            <p>
+                                <span class="badge text-bg-light">HTML/CSS/JS</span>
+                                <span class="badge text-bg-light">Electron</span>
+                                <span class="badge text-bg-light">C++</span>
+                            </p>
+                            <a href="https://github.com/fannytraore12/mochadoro" class="card-link">Mochadoro on GitHub</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="images/scamfree.png" class="card-img-top"
+                             alt="ScamFree phishing alert shown inside a Gmail inbox">
+                        <div class="card-body">
+                            <h3 class="card-title h5">ScamFree</h3>
+                            <p class="card-text">A Chrome extension that flags suspected phishing emails right inside Gmail. Built with a teammate for a hackathon: I built the extension and the automated tests (pytest and Jest, with a 95% accuracy quality gate) that run in GitHub Actions on every push.</p>
+                            <p>
+                                <span class="badge text-bg-light">JavaScript</span>
+                                <span class="badge text-bg-light">Chrome Extension</span>
+                                <span class="badge text-bg-light">Python</span>
+                                <span class="badge text-bg-light">pytest / Jest</span>
+                                <span class="badge text-bg-light">GitHub Actions</span>
+                            </p>
+                            <a href="https://github.com/fannytraore12/ScamFree" class="card-link">ScamFree on GitHub</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img src="images/morsecode.png" class="card-img-top"
+                             alt="PYNQ-Z2 FPGA board with LEDs lit while decoding a Morse code signal">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Morse Code Decoder</h3>
+                            <p class="card-text">A Morse code decoder built in Verilog on a PYNQ-Z2 FPGA board. It uses a synchronizer and a four-state state machine to read button presses reliably despite timing jitter. When the state machine misbehaved during testing, I found the problem by routing its states to the board's LEDs and fixed it with pulse conditioning. <em>(In progress)</em></p>
+                            <p>
+                                <span class="badge text-bg-light">Verilog</span>
+                                <span class="badge text-bg-light">Vivado</span>
+                                <span class="badge text-bg-light">FPGA (PYNQ-Z2)</span>
+                            </p>
+                            <a href="https://github.com/fannytraore12/MorseCode_decoder" class="card-link">Morse Code Decoder on GitHub</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
         </section>
 
         <section id="skills" class="py-5">
